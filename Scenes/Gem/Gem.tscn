@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://deypkadhqqx3j"]
+
+[ext_resource type="Script" uid="uid://ca1jbtivl58yk" path="res://Scenes/Gem/Gem.cs" id="1_7tt7y"]
+[ext_resource type="Texture2D" uid="uid://cthfw2w23fumn" path="res://assets/red_gem.png" id="2_7tt7y"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tleiy"]
+radius = 24.0
+height = 48.0
+
+[node name="Gem" type="Area2D"]
+script = ExtResource("1_7tt7y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(4.76837e-07, 1.19209e-07)
+scale = Vector2(4.6, 4.6)
+texture = ExtResource("2_7tt7y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_tleiy")

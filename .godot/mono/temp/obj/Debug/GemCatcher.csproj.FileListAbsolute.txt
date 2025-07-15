@@ -1,0 +1,17 @@
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\bin\Debug\GemCatcher.deps.json
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\bin\Debug\GemCatcher.runtimeconfig.json
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\bin\Debug\GemCatcher.dll
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\bin\Debug\GemCatcher.pdb
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\GemCatcher.csproj.AssemblyReference.cache
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\GemCatcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\GemCatcher.AssemblyInfoInputs.cache
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\GemCatcher.AssemblyInfo.cs
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\GemCatcher.csproj.CoreCompileInputs.cache
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\GemCatcher.csproj.Up2Date
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\GemCatcher.dll
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\refint\GemCatcher.dll
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\GemCatcher.pdb
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\GemCatcher.genruntimeconfig.cache
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\ref\GemCatcher.dll

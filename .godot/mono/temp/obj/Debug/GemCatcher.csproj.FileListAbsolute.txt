@@ -15,3 +15,4 @@ C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\refint\
 C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\GemCatcher.pdb
 C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\GemCatcher.genruntimeconfig.cache
 C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\ref\GemCatcher.dll
+C:\Users\imale\OneDrive\Documentos\GemCatcher\.godot\mono\temp\obj\Debug\GemCatcher.sourcelink.json

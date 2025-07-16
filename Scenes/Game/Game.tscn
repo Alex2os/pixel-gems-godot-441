@@ -14,6 +14,7 @@ script = ExtResource("1_rdw05")
 position = Vector2(468.829, 308.738)
 scale = Vector2(9.71586, 10.1318)
 texture = ExtResource("2_ln2h6")
+metadata/_edit_lock_ = true
 
 [node name="Paddle" parent="." instance=ExtResource("3_xbxml")]
 position = Vector2(474.79, 500)
@@ -21,3 +22,5 @@ metadata/_edit_lock_ = true
 
 [node name="Gem" parent="." instance=ExtResource("4_ln2h6")]
 position = Vector2(424.332, 117.1)
+
+[connection signal="OnScored" from="Gem" to="." method="OnScored"]

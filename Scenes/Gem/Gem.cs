@@ -7,6 +7,7 @@ public partial class Gem : Area2D
 	[Export] float _rotation_speed = 0.01f;
 	// we can create a signal in this way:
 	[Signal] public delegate void OnScoredEventHandler(); // we have to put the name of our signal and then EventHandler, so godot knows it's a signal
+	[Signal] public delegate void OnGemOffScreenEventHandler();
 
 
 	// Called when the node enters the scene tree for the first time.
@@ -23,6 +24,8 @@ public partial class Gem : Area2D
 	{
 		Position += new Vector2(0, _falling_speed * (float)delta); // this will make the gem fall in its y value, remember that Y gets bigger the more below you are
 		Rotation += _rotation_speed; // just a little rotation effect that I wanted to add
+
+		CheckHitBottom(); // check if a gem has hit the bottom
 	}
 
 	// we can connect signals that are created from godot in this way:
@@ -35,5 +38,22 @@ public partial class Gem : Area2D
 
 	}
 
+	private void CheckHitBottom()
+	{
+
+		Rect2 vpr = GetViewportRect(); // we get the viewport so we can check the gem's position
+
+		if (Position.Y > vpr.End.Y)
+		{
+
+			GD.Print("Gem off screen!");
+			EmitSignal(SignalName.OnGemOffScreen);
+			SetProcess(false); // with this, there will be no more updates to this instance (the gem), so, basically, we stop the "loop" for the gem. with this we stop the signal from emitting two or more times.
+			// QueueFree(); // we eliminate the object so it stops there
+
+		}
+
+
+	}
 
 }

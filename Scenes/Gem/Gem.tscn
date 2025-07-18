@@ -8,6 +8,7 @@ radius = 24.0
 height = 48.0
 
 [node name="Gem" type="Area2D"]
+position = Vector2(-2, 0)
 script = ExtResource("1_7tt7y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

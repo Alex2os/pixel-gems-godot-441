@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqclcq3caqaot"]
+[gd_scene load_steps=8 format=3 uid="uid://bqclcq3caqaot"]
 
 [ext_resource type="Script" uid="uid://d0ih4ednynewn" path="res://Scenes/Game/Game.cs" id="1_rdw05"]
 [ext_resource type="Texture2D" uid="uid://uck7ruy6a8e2" path="res://assets/gameBg.png" id="2_ln2h6"]
 [ext_resource type="PackedScene" uid="uid://rqq3oqkogm1b" path="res://Scenes/Paddle/Paddle.tscn" id="3_xbxml"]
 [ext_resource type="PackedScene" uid="uid://deypkadhqqx3j" path="res://Scenes/Gem/Gem.tscn" id="4_ln2h6"]
+[ext_resource type="FontFile" uid="uid://woyvdwd2ql2w" path="res://assets/balatro.ttf" id="5_y3kpf"]
+[ext_resource type="AudioStream" uid="uid://dvpnqt8yvxprc" path="res://assets/retro-game-arcade-236133.mp3" id="6_3k6gv"]
+[ext_resource type="AudioStream" uid="uid://cbgq2ufhxg32k" path="res://assets/spell1_0.wav" id="7_1q8bt"]
 
 [node name="Game" type="Node2D"]
 position = Vector2(17, 22)
@@ -11,6 +14,9 @@ scale = Vector2(1.19, 1.03)
 script = ExtResource("1_rdw05")
 _gemScene = ExtResource("4_ln2h6")
 _timerPath = NodePath("Timer")
+_scoreLabelPath = NodePath("ScoreLabel")
+_musicPath = NodePath("Music")
+_effectPlayingPath = NodePath("Effect")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(468.829, 308.738)
@@ -25,3 +31,25 @@ metadata/_edit_lock_ = true
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
 autostart = true
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 6.0
+offset_right = 121.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(0, 0.619614, 0.819747, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("5_y3kpf")
+theme_override_font_sizes/font_size = 48
+text = "0"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_3k6gv")
+volume_db = -20.0
+autoplay = true
+
+[node name="Effect" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_1q8bt")
+volume_db = -10.0
